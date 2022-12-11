@@ -357,8 +357,8 @@ hr {
 }
 
 #skills {
-  padding: 4rem 0 2rem 0;
-  height: 70vh;
+  padding: 1rem 0 5rem 0;
+  /* height: 70vh; */
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
 }
 .skills-list {
