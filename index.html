@@ -19,12 +19,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Bungee+Shade&family=Manrope:wght@200;400&family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;900&family=Playfair+Display:wght@400;800;900&family=Raleway:wght@100;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="hamburger.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
     <title>Heather Mielke</title>
   </head>
   <body>
     <span class="shadow-wrap">
     <section id="heading">
-      <nav class="nav">
+      <header class="nav">
         <div class="nav-logo">
           <h3 class="nav-logo-letters">Heather Mielke</h3>
         </div>
@@ -34,6 +37,15 @@
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
         </ul>
+        <button class="hamburger"type="button">
+          <div class="bar"></div>
+        </button>
+      </header>
+      <nav class="mobile-nav">
+        <a class="mobile-link" href="#about">about</a>
+        <a class="mobile-link" href="#projects">projects</a>
+        <a class="mobile-link" href="#skills">skills</a>
+        <a class="mobile-link" href="#contact">contact</a>
       </nav>
       <div class="top-section">
         <div class="top-description">
@@ -50,10 +62,10 @@
         </div>
           <hr />
           <div class="multi-btn-container">
-            <button href="#" class="btn-solid btn-three">Contact me</button>
-            <button href="#" class="btn-transparent">
-              Resume<span>(pdf)</span>
-            </button>
+            <a href="mailto:heatherlmielke@gmail.com"><button class="btn-solid btn-three">Contact me</button></a>
+            <form method="get" action="Heather-Mielke-Resume2023.pdf" target="_blank">
+              <button class="btn-transparent" type="submit">Resume<span>(pdf)</span></button>
+          </form>
           </div>
         </div>
         <div class="top-image">
@@ -61,25 +73,16 @@
             <img src="heather-walking.jpeg" alt="heather" />
           </div>
         </div>
-      </div>
-      <div class="arrow-container">
-        <a data-scroll href="#">
-          <div class="arrow"></div>
-        </a>
-      </div>
     </section>
   </span>
 
     <section id="about">
       <div class="title-container">
+        <h1 class=" bold-header">About Me</h1>
         <hr class="header-style">
-        <h1 class=" bold-header"><span class="color"> </span> About Me</h1>
       </div>
       <div class="about-info">
-        <!-- <div class="image-container2">
-          <img src="heather-walking.jpeg" alt="heather" />
-        </div> -->
-        <div class="top-image">
+        <div class="image">
           <div class="image-container2">
             <img src="heather-walking.jpeg" alt="heather" />
           </div>
@@ -124,14 +127,14 @@
             <li>GitHub</li>
             <li>Google Fonts</li>
           </ul>
-          <button class="btn-solid">View Project</button>
+          <a href="https://buyfurniture.herokuapp.com/" target="_blank"><button class="btn-solid">View Project</button></a>
           <p class="project-info">Cozy Furniture is an E-Commerce application with an array of furniture including bedframes, desks, couches, chairs, headboards, etc. Users are able to add products to their cart and increase the quantity amount. Upon 'purchase' the cart is cleared and a thank you for your purchase popup occurs.</p>
         </div>
         <div class="image-section">
           <img src="images/cozy-furniture.png" alt="cozy furniture site">
         </div>
       </div>
-      <div class="project">
+      <div class="project2">
         <div class="image-section">
           <img src="images/image.png" alt="image site">
         </div>
@@ -148,16 +151,18 @@
             <li>GitHub</li>
             <li>Google Fonts</li>
           </ul>
-          <button class="btn-solid">View Project</button>
-          <p class="project-info">Image is an application that allows users to add images with a caption and description that gets posted to the discover board. This application was inspired by pinterest and allows for a search function on the discover page as well as the ability to edit posts and delete them. There is also an expand button to enlarge the images and display the description created by the users.</p>
+          <a href="https://cheerful-chimera-7e03cf.netlify.app/" target="_blank"><button class="btn-solid">View Project</button></a>
+          <p class="project-info2">Image is an application that allows users to add images with a caption and description that gets posted to the discover board. This application was inspired by pinterest and allows for a search function on the discover page as well as the ability to edit posts and delete them. There is also an expand button to enlarge the images and display the description created by the users.</p>
         </div>
       </div>
     </section>
   </span>
     <section id="skills">
       <div class="title-container">
-        <hr class="header-style">
+        <div class="title-container">
         <h2 class="bold-header">Skills</h2>
+        <hr class="header-style">
+      </div>
         <div>
           <ul class="skills-list">
             <li>HTML</li>
@@ -217,9 +222,5 @@
       </div>
       <p>@ 2022, Built and designed by Heather Mielke</p>
   </footer>
-  <!-- <div id="credit">
-      <a class="icon8" target="_blank" href="https://icons8.com/icon/40253/jquery">JQuery</a> <p class="icon8">icon by </p><a class="icon8" target="_blank" href="https://icons8.com">Icons8</a>
-      <a class="icon8" target="_blank" href="https://icons8.com/icon/36440/postgresql">PostgreSQL</a> <p class="icon8">icon by </p> <a class="ion8" target="_blank" href="https://icons8.com">Icons8</a>
-  </div> -->
   </body>
 </html>
