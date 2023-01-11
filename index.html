@@ -5,38 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Bungee+Shade&family=Manrope:wght@200;400&family=Merriweather:wght@300;400;700&family=Montserrat:wght@100;200;300;400;900&family=Playfair+Display:wght@400;800;900&family=Raleway:wght@100;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="hamburger.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
     <title>Heather Mielke</title>
   </head>
   <body>
+    <span class="shadow-wrap">
     <section id="heading">
-      <nav class="nav">
+      <header class="nav">
         <div class="nav-logo">
-          <h3 class="nav-logo-letters">HM</h3>
+          <h3 class="nav-logo-letters">Heather Mielke</h3>
         </div>
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
         </ul>
+        <button class="hamburger"type="button">
+          <div class="bar"></div>
+        </button>
+      </header>
+      <nav class="mobile-nav">
+        <a class="mobile-link" href="#about">about</a>
+        <a class="mobile-link" href="#projects">projects</a>
+        <a class="mobile-link" href="#skills">skills</a>
+        <a class="mobile-link" href="#contact">contact</a>
       </nav>
       <div class="top-section">
         <div class="top-description">
-          <h2 class="bold-text">Heather Mielke</h2>
-          <p class="normal-text">Software Developer with an eye for design</p>
-          <button href="#" class="btn">Contact me</button>
+          <p class="bold">Hello I'm</p>
+          <h1 class="main-header">Heather Mielke</h1>
+          <p class="normal-text">
+            Software Developer with a love for technology | Forever Learning New
+            Things | Mother of One and Love to Have Fun
+          </p>
+          <div class="icons">
+            <a href="https://www.facebook.com/heather.l.mielke" target="_blank"><i class="bi bi-facebook" ></i></a>
+            <a  href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:heatherlmielke@gmail.com"><i class="bi bi-envelope-fill" ></i></a>
+        </div>
+          <hr />
+          <div class="multi-btn-container">
+            <a href="mailto:heatherlmielke@gmail.com"><button class="btn-solid btn-three">Contact me</button></a>
+            <form method="get" action="Heather-Mielke-Resume2023.pdf" target="_blank">
+              <button class="btn-transparent" type="submit">Resume<span>(pdf)</span></button>
+          </form>
+          </div>
         </div>
         <div class="top-image">
           <div class="image-container">
             <img src="heather-walking.jpeg" alt="heather" />
           </div>
         </div>
+    </section>
+  </span>
+
+    <section id="about">
+      <div class="title-container">
+        <h1 class=" bold-header">About Me</h1>
+        <hr class="header-style">
       </div>
-      <div class="arrow-container">
-        <a data-scroll href="#">
-          <div class="arrow"></div>
-        </a>
+      <div class="about-info">
+        <div class="image">
+          <div class="image-container2">
+            <img src="heather-walking.jpeg" alt="heather" />
+          </div>
+        </div>
+       <div class="info">
+          <p>
+            My name is <span class="bold">Heather Mielke</span> and I am an
+            Application Developer based in Minnesota, USA. I have a diverse
+            background career background and have come to find development being
+            my true passion. I enjoy the creativity and problem solving I am able
+            to do day to day when create and manageing applications. Focusing on
+            continuing learning with the everchanging world of technology is
+            important to me. When I am not developing applications I am with my
+            family and enjoying quality time with them.
+            <div class="more-info">
+              <h3 class="sub-header">Education</h3>
+              <div class="edu-sec">
+                <p><i class="bi bi-mortarboard"></i><b >General Assembly</b> | Software Engineering Immersive</p> 
+                 <p><i class="bi bi-mortarboard"></i><b >Rasmussen University</b> | AS Software Application Development</p>
+                 <p><i class="bi bi-mortarboard"></i><b >Rasmussen University</b> | AS Accounting</p>
+            </div>
+          </p>
+        </div>
       </div>
     </section>
+    <span class="shadow-wrap">
+    <section id="projects">
+      <div class="title-container2">
+        <h2 class="bold-header ">Projects</h2>
+        </div>
+        <div class="project">
+        <div class="project-description">
+          <h6 class="project-type">Personal Project</h6>
+          <h3 class="project-name">Cozy Furniture</h3>
+          <ul class="technologies left">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Google Fonts</li>
+          </ul>
+          <a href="https://buyfurniture.herokuapp.com/" target="_blank"><button class="btn-solid">View Project</button></a>
+          <p class="project-info">Cozy Furniture is an E-Commerce application with an array of furniture including bedframes, desks, couches, chairs, headboards, etc. Users are able to add products to their cart and increase the quantity amount. Upon 'purchase' the cart is cleared and a thank you for your purchase popup occurs.</p>
+        </div>
+        <div class="image-section">
+          <img src="images/cozy-furniture.png" alt="cozy furniture site">
+        </div>
+      </div>
+      <div class="project2">
+        <div class="image-section">
+          <img src="images/image.png" alt="image site">
+        </div>
+        <div class="project-description2">
+          <h6 class="project-type">Personal Project</h6>
+          <h3 class="project-name">Image</h3>
+          <ul class="technologies2 right">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Google Fonts</li>
+          </ul>
+          <a href="https://cheerful-chimera-7e03cf.netlify.app/" target="_blank"><button class="btn-solid">View Project</button></a>
+          <p class="project-info2">Image is an application that allows users to add images with a caption and description that gets posted to the discover board. This application was inspired by pinterest and allows for a search function on the discover page as well as the ability to edit posts and delete them. There is also an expand button to enlarge the images and display the description created by the users.</p>
+        </div>
+      </div>
+    </section>
+  </span>
+    <section id="skills">
+      <div class="title-container">
+        <h2 class="bold-header">Skills</h2>
+        <hr class="header-style">
+      </div>
+        <div>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>C#/.net</li>
+            <li>Responsive Design</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>Visual Studio</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>MySQL(Workbench)</li>
+            <li>API</li>
+            <li>Dell Boomi</li>
+            <li>Azure DevOps</li>
+          </ul>
+        </div>
+    </section>
+    <span class="shadow-wrap">
+    <section class="contact-container" >
+      <div class="contact-container-title" id="contact">
+        <h2 class="bold-header">Contact Me</h2>
+        <div class="icons icons-center">
+            <a href="https://www.facebook.com/heather.l.mielke" target="_blank"><i class="bi bi-facebook" ></i></a>
+            <a  href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:heatherlmielke@gmail.com"><i class="bi bi-envelope-fill" ></i></a>
+        </div>
+      </div>
+      <form  method="POST" action="https://formsubmit.co/heatherlmielke@gmail.com" method="POST">
+        <div class="inputs">
+          <input class="line" type="text" name="text" placeholder="Name" required>
+          <input class="line email" type="email" name="email" placeholder="Example@gmail.com" required>
+          <input class="line subject" type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <textarea class="box message" type="text" name="message" placeholder="Message here..." required></textarea>
+        <input type="hidden" name="_next" value="https://www.heathermielke.com/thankyou.html">
+      <div class="button-section">
+        <button class="send-button onclic validate btn-solid" type="submit">Send</button>
+      </div>
+      </form>
+  </section>
+</span>
+  <a href="#home" class="up"><ion-icon name="arrow-up-outline"></ion-icon></a>
+  </div>
+  <footer>
+      <p>Connect With Me</p>
+      <div class="icons2">
+          <a href="https://www.facebook.com/heather.l.mielke" target="_blank"><i class="bi bi-facebook" ></i></a>
+          <a  href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:heatherlmielke@gmail.com"><i class="bi bi-envelope-fill" ></i></a>
+          <a href='https://github.com/Heather-Mielke' target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+      <p>@ 2022, Built and designed by Heather Mielke</p>
+  </footer>
   </body>
 </html>
