@@ -113,7 +113,7 @@ body {
   font-size: 3rem;
   color: #211a1d;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 .normal-text {
   font-size: 1.15rem;
@@ -572,13 +572,17 @@ footer > p {
     flex-direction: column;
     align-items: flex-start;
   }
+  .title-container2,
+  .title-container2 > h2 {
+    padding: 3rem 0 0 0.5rem;
+  }
   .project-description,
   .project-description2 {
     width: 80%;
   }
   .image-section {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
   }
   .project2 {
     flex-direction: column-reverse;
@@ -611,9 +615,10 @@ footer > p {
   }
   #about {
     clip-path: none;
+    padding: 3rem 0;
   }
   .bold-header {
-    padding-left: 5px;
+    padding-left: 1.5rem;
     font-size: 2rem;
   }
   .header-style {
@@ -628,9 +633,7 @@ footer > p {
     width: 90%;
     font-size: 0.85rem;
   }
-  .title-container2 {
-    padding: 3rem 0 0 0.5rem;
-  }
+
   .project {
     margin-bottom: 5rem;
   }
@@ -654,11 +657,10 @@ footer > p {
     border-radius: 30px;
   }
   .image-section {
-    margin: 2rem auto 0 auto;
     width: 90%;
   }
   #skills {
-    padding: 1rem;
+    padding: 1rem 0;
   }
   .skills-list > li {
     padding: 0.5rem;
